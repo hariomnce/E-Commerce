@@ -17,9 +17,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
         (info = @Info(
                 title = "E-Commerce Web Applicaion API",
                 version = "2.0",
-                description = "E-Commerce Setup Module Documentation",
-                license = @License(name = "Apache 2.0", url = "https://ecommerce.com/swagger-ui/index.html"),
-                contact = @Contact(url = "https://www.ecommerce.com", name = "Hariom Sharma", email = "hariomnce@gmail.com")
+                description = "E-Commerce Setup Module Documentation"
         ))
 public class ECommerceApplication {
 
