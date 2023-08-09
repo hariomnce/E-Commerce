@@ -15,7 +15,7 @@ public class LocalUser {
     @Column(name = "id", nullable = false)
     private Long id;
 
-    @Column(name = "uaer_name", nullable = false, unique = true)
+    @Column(name = "user_name", nullable = false, unique = true)
     private String userName;
 
     @Column(name = "password", nullable = false, length = 1000)
