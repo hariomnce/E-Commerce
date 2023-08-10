@@ -1,7 +1,9 @@
 package com.ecommerce.ECommerce.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.Data;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,7 +32,8 @@ public class LocalUser {
     @Column(name = "last_name", nullable = false)
     private String lastName;
 
-    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, orphanRemoval = true)
+    @JsonIgnore
+    @OneToMany(mappedBy = "user", cascade = CascadeType.REMOVE, orphanRemoval = true, fetch = FetchType.EAGER)
     private List<Address> addresses = new ArrayList<>();
 
     public LocalUser() {
