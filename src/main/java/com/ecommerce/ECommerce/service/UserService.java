@@ -1,5 +1,6 @@
 package com.ecommerce.ECommerce.service;
 
+import com.auth0.jwt.JWT;
 import com.ecommerce.ECommerce.api.model.LoginBody;
 import com.ecommerce.ECommerce.api.model.RegistrationBody;
 import com.ecommerce.ECommerce.exception.UserAlreadyExistsException;
@@ -46,4 +47,5 @@ public class UserService {
         }
         return null;
     }
+
 }
